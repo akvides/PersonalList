@@ -15,6 +15,8 @@
 		74199E3F280EF96F00013B2F /* PersonalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E3E280EF96E00013B2F /* PersonalListViewController.swift */; };
 		74199E41280EF9FB00013B2F /* ExtendedPersonalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E40280EF9FB00013B2F /* ExtendedPersonalListViewController.swift */; };
 		74199E43280EFA0F00013B2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E42280EFA0F00013B2F /* DetailViewController.swift */; };
+		743ECF2D280EFEEA0061584C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ECF2C280EFEEA0061584C /* Person.swift */; };
+		743ECF2F280EFF660061584C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743ECF2E280EFF660061584C /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		74199E3E280EF96E00013B2F /* PersonalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalListViewController.swift; sourceTree = "<group>"; };
 		74199E40280EF9FB00013B2F /* ExtendedPersonalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedPersonalListViewController.swift; sourceTree = "<group>"; };
 		74199E42280EFA0F00013B2F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		743ECF2C280EFEEA0061584C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		743ECF2E280EFF660061584C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		74199E44280EFA1800013B2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				743ECF2C280EFEEA0061584C /* Person.swift */,
+				743ECF2E280EFF660061584C /* DataManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -176,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743ECF2D280EFEEA0061584C /* Person.swift in Sources */,
 				74199E28280EF8DD00013B2F /* AppDelegate.swift in Sources */,
 				74199E3F280EF96F00013B2F /* PersonalListViewController.swift in Sources */,
+				743ECF2F280EFF660061584C /* DataManager.swift in Sources */,
 				74199E43280EFA0F00013B2F /* DetailViewController.swift in Sources */,
 				74199E2A280EF8DD00013B2F /* SceneDelegate.swift in Sources */,
 				74199E41280EF9FB00013B2F /* ExtendedPersonalListViewController.swift in Sources */,
