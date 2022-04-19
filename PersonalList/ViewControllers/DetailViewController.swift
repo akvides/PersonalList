@@ -11,21 +11,16 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.title = person.fullName
+        phoneLabel.text = "Phone: \(person.phone)"
+        mailLabel.text = "Email: \(person.mail)"
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

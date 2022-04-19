@@ -32,8 +32,9 @@ class PersonalListViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let detailController = segue.destination as! DetailViewController
-        
+        guard let detailController = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        detailController.person = persons[indexPath.row]
     }
     
 }
