@@ -7,7 +7,7 @@
 
 class DataManager {
     
-    var names = [
+    private var names = [
         "Glen",
         "Tom",
         "Edward",
@@ -15,7 +15,7 @@ class DataManager {
         "Jack"
     ]
     
-    var lastNames = [
+    private var lastNames = [
         "Lantz",
         "Hanson",
         "Scissorhands",
