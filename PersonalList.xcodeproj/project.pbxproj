@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		74199E28280EF8DD00013B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E27280EF8DD00013B2F /* AppDelegate.swift */; };
 		74199E2A280EF8DD00013B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E29280EF8DD00013B2F /* SceneDelegate.swift */; };
-		74199E2C280EF8DD00013B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E2B280EF8DD00013B2F /* ViewController.swift */; };
 		74199E2F280EF8DD00013B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74199E2D280EF8DD00013B2F /* Main.storyboard */; };
 		74199E31280EF8DF00013B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74199E30280EF8DF00013B2F /* Assets.xcassets */; };
 		74199E34280EF8DF00013B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74199E32280EF8DF00013B2F /* LaunchScreen.storyboard */; };
+		74199E3F280EF96F00013B2F /* PersonalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E3E280EF96E00013B2F /* PersonalListViewController.swift */; };
+		74199E41280EF9FB00013B2F /* ExtendedPersonalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E40280EF9FB00013B2F /* ExtendedPersonalListViewController.swift */; };
+		74199E43280EFA0F00013B2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74199E42280EFA0F00013B2F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74199E24280EF8DD00013B2F /* PersonalList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74199E27280EF8DD00013B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74199E29280EF8DD00013B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74199E2B280EF8DD00013B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74199E2E280EF8DD00013B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74199E30280EF8DF00013B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74199E33280EF8DF00013B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74199E35280EF8DF00013B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74199E3E280EF96E00013B2F /* PersonalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalListViewController.swift; sourceTree = "<group>"; };
+		74199E40280EF9FB00013B2F /* ExtendedPersonalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedPersonalListViewController.swift; sourceTree = "<group>"; };
+		74199E42280EFA0F00013B2F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		74199E26280EF8DD00013B2F /* PersonalList */ = {
 			isa = PBXGroup;
 			children = (
-				74199E27280EF8DD00013B2F /* AppDelegate.swift */,
-				74199E29280EF8DD00013B2F /* SceneDelegate.swift */,
-				74199E2B280EF8DD00013B2F /* ViewController.swift */,
-				74199E2D280EF8DD00013B2F /* Main.storyboard */,
-				74199E30280EF8DF00013B2F /* Assets.xcassets */,
-				74199E32280EF8DF00013B2F /* LaunchScreen.storyboard */,
-				74199E35280EF8DF00013B2F /* Info.plist */,
+				74199E44280EFA1800013B2F /* Models */,
+				74199E3D280EF94C00013B2F /* ViewControllers */,
+				74199E3C280EF93200013B2F /* Storyboards */,
+				74199E3B280EF92700013B2F /* Supporting Files */,
 			);
 			path = PersonalList;
+			sourceTree = "<group>";
+		};
+		74199E3B280EF92700013B2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74199E27280EF8DD00013B2F /* AppDelegate.swift */,
+				74199E29280EF8DD00013B2F /* SceneDelegate.swift */,
+				74199E30280EF8DF00013B2F /* Assets.xcassets */,
+				74199E35280EF8DF00013B2F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74199E3C280EF93200013B2F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				74199E2D280EF8DD00013B2F /* Main.storyboard */,
+				74199E32280EF8DF00013B2F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		74199E3D280EF94C00013B2F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74199E3E280EF96E00013B2F /* PersonalListViewController.swift */,
+				74199E40280EF9FB00013B2F /* ExtendedPersonalListViewController.swift */,
+				74199E42280EFA0F00013B2F /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74199E44280EFA1800013B2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74199E2C280EF8DD00013B2F /* ViewController.swift in Sources */,
 				74199E28280EF8DD00013B2F /* AppDelegate.swift in Sources */,
+				74199E3F280EF96F00013B2F /* PersonalListViewController.swift in Sources */,
+				74199E43280EFA0F00013B2F /* DetailViewController.swift in Sources */,
 				74199E2A280EF8DD00013B2F /* SceneDelegate.swift in Sources */,
+				74199E41280EF9FB00013B2F /* ExtendedPersonalListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +333,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +363,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
